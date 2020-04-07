@@ -9,14 +9,15 @@ const orderNowContainer = document.getElementById('order-now-container');
 for (let i = 0; i < cart.length; i++) {
     //cart items list
     const cartItem = cart[i];
-    //renderFruit.js - pull fruit info + cartItem info
     const exoticFruit = findById(exoticFruits, cartItem.id);
-    // table row
-    const dom = renderTableRow(cartItem, exoticFruits);
+    const lineTotal = calcLineTotal(cartItem.quantity, exoticFruits.price);
 
-    //
-    tbody.appendChild(dom);
+    orderTotal += lineTotal;
+    
+    return lineTotal
 }
+tbody.appendChild(dom);
+
 
 const orderTotal = calcOrderTotal(cart, exoticFruits);
 orderTotalCell.textContent = toUSD(orderTotal);
