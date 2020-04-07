@@ -58,7 +58,7 @@ const monkfruit = {
     id: 'item7',
     name: 'monkfruit',
     image: 'https://specialtyproduce.com/sppics/8824.png',
-    description: 'It tastes better than it looks!',
+    description: 'It looks better than it tastes!',
     category: 'fruit',
     price: 18.99
 };
