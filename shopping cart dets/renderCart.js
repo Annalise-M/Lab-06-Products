@@ -1,5 +1,5 @@
 export default dataCart;
-// imports to og up here
+// imports to go up here
 
 const tbody = document.querySelector('tbody');
 const address = fruit.address;

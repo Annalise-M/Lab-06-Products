@@ -11,3 +11,13 @@ function findById(array, id) {
 }
 
 export default findById;
+
+function roundCurrency(amount) {
+    return Math.round(amount * 100) / 100;
+}
+
+export function calcLineItem(quantity, price) {
+    const orderTotal = quantity * price;
+
+    return roundCurrency(orderTotal);
+}
