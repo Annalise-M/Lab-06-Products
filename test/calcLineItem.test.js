@@ -1,4 +1,4 @@
-import { calcLineItem } from '../shopping cart dets/utils/utils.js';
+import { calcLineItem } from '../utils/utils.js';
 
 const test = QUnit.test;
 

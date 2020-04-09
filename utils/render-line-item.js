@@ -1,5 +1,11 @@
 import { calcLineItem } from './utils.js';
 
+export function makeReadablePrice(price) {
+    const readablePrice = `$${Number(price).toFixed(2)}`;
+    
+    return readablePrice;
+}
+
 export function renderLineItem(cartItem, fruit) {
     const tr = document.createElement('tr');
 
@@ -8,16 +14,15 @@ export function renderLineItem(cartItem, fruit) {
     nameTd.classList.add('align-left');
 
     const quantityTd = document.createElement('td');
-    nameTd.textContent = cartItem.quantity;
-    nameTd.classList.add('align-left');
+    quantityTd.textContent = cartItem.quantity;
 
     const priceTd = document.createElement('td');
-    nameTd.textContent = fruit.price;
+    priceTd.textContent = makeReadablePrice(fruit.price);
 
     const totalTd = document.createElement('td');
-    const totalPrice = calcLineItem(fruit.price, cartItem.quantity);
-    totalTd.textContent = totalPrice;
-    totalTd.classList.add('Line-item-total');
+    const totalPrice = (fruit.price * cartItem.quantity);
+    totalTd.textContent = makeReadablePrice(totalPrice);
+    // totalTd.classList.add('line-item-total');
 
     tr.appendChild(nameTd);
     tr.appendChild(quantityTd);

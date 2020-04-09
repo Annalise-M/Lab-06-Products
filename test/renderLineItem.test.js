@@ -1,3 +1,5 @@
+import { renderLineItem } from '../utils/render-line-item.js';
+
 const test = QUnit.test;
 
 test('renderLineItem', function(assert) {
@@ -16,7 +18,7 @@ test('renderLineItem', function(assert) {
         price: 12.00
     };
 
-    const expected = '<tr><th class="align-left">Your Fruit</th><th>Quantity</th><th>Price</th><th>Total</th</tr> <tbody><tr><td class="align-left">durian</td><td>1</td><td>$12.00</td><td class="line-item-total">$12.00</td> </tr>';
+    const expected = '<tr><td class="align-left">durian</td><td>1</td><td>$12.00</td><td>$12.00</td></tr>';
     //Act 
     // Call the function you're testing and set the result to a const
     const lineItem = renderLineItem(cartItem, fruit);
