@@ -32,6 +32,9 @@ export function renderLineItem(cartItem, fruit) {
     return tr;
 
 }
+
+
+
 // const ID
 // const quantity
 // const price
