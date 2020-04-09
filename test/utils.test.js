@@ -2,7 +2,7 @@
 // // import example from '../src/example.js';
 import cart from '../shoppingCartDets/cartData.js';
 import exoticFruits from '../data.js';
-import { calcOrderTotal } from '../utils';
+import { calcOrderTotal } from '../utils/utils.js';
 
 const test = QUnit.test;
 

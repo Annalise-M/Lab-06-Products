@@ -1,4 +1,4 @@
-import { renderLineItem } from '../utils/render-line-item.js';
+import { renderLineItem } from '../shoppingCartDets/render-line-item.js';
 
 const test = QUnit.test;
 
