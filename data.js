@@ -1,5 +1,3 @@
-
-
 const kumquat = {
     id: 'item1',
     name: 'kumquat',
