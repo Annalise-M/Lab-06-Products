@@ -1,12 +1,10 @@
-
-
 const kumquat = {
     id: 'item1',
     name: 'kumquat',
     image: 'https://cdn.shopify.com/s/files/1/2336/3219/products/Meiwa_Kumquat_x850.jpg?v=1525725643',
     description: 'Nature\'s sour candy!',
     category: 'fruit',
-    price: 11.99
+    price: 11.00
 };
 
 const dragonfruit = {
@@ -15,7 +13,7 @@ const dragonfruit = {
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPll4W-Yz9Tr5F9uROjOhmutV5ODLYQ6nY1CBdc2pfC_ETgebZ&usqp=CAU',
     description: 'Also known as Pitaya!',
     category: 'fruit',
-    price: 5.99
+    price: 5.00
 }; 
 
 const mangosteen = {
@@ -24,7 +22,7 @@ const mangosteen = {
     image: 'https://images-na.ssl-images-amazon.com/images/I/41nDqKsRGHL._SX425_.jpg',
     description: 'Often called, the Queen of fruits!',
     category: 'fruit',
-    price: 4.99
+    price: 4.00
 };
 
 const durian = {
@@ -42,7 +40,7 @@ const passionfruit = {
     image: 'https://plantogram.com/wa-data/public/shop/products/00/04/400/images/1176/1176.750x0.jpg',
     description: 'A vine species of passion flower!',
     category: 'fruit',
-    price: 8.99
+    price: 8.00
 };
 
 const starfruit = {
@@ -51,7 +49,7 @@ const starfruit = {
     image: 'https://miro.medium.com/max/400/0*nnPSLKRiE89H4bkn.jpg',
     description: 'Also known as the Carambola',
     category: 'fruit',
-    price: 10.99
+    price: 10.00
 };
 
 const monkfruit = {
@@ -60,7 +58,7 @@ const monkfruit = {
     image: 'https://specialtyproduce.com/sppics/8824.png',
     description: 'It looks better than it tastes!',
     category: 'fruit',
-    price: 18.99
+    price: 18.00
 };
 
 const exoticFruits = [
