@@ -1,8 +1,8 @@
 // // IMPORT MODULES under test here:
 // // // import example from '../src/example.js';
-// // import findById, { calcLineItem } from '../shopping cart dets/utils/utils.js';
 // import cart from '../shoppingCartDets/cartData.js';
 // import exoticFruits from '../data.js';
+// import { calcOrderTotal } from '../utils';
 
 // const test = QUnit.test;
 
