@@ -1,4 +1,4 @@
-import { calcLineItem } from './utils.js';
+
 
 export function makeReadablePrice(price) {
     const readablePrice = `$${Number(price).toFixed(2)}`;
