@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+    
+    <link rel="stylesheet" href="../products.css">
+    <a href="index.html">Home</a>   
+
+</head>
+
+<body>
+    <header></header>
+        <section class="centered">
+            <p>
+                <!-- add image here -->
+                <!-- <img class="" src=""> -->
+            </p>
+            <p>
+                <!-- not sure about the href= below...??? -->
+                <a href="renderFruit.js">Purchase here!</a>
+            </p>
+            <p>
+                <!-- href= to cart -->
+                <a href="shopping-cart">View Your Cart Here!</a>
+            </p>
+        </section>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="align-left">Your Fruit</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-left">durian</td>
+                        <td></td>
+                        <td></td>
+                        <td class="line-item-total">
+                        </td>
+                    </tr>
+                </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Order Total</th>
+                    <th id="order-total-cell"></th>
+                </tr>
+            </tfoot>
+        </table>
+        <p class="order-now-container">
+            <button>Place Order</button>
+        </p>
+    </main>
+    <script src="shopping-cart.js" type="module"></script>
+</body>
+</html>
