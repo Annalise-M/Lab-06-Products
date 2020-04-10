@@ -9,12 +9,11 @@ function findById(array, id) {
     }
     return foundItem;
 }
-
-export default findById;
-
 function roundCurrency(amount) {
     return Math.round(amount * 100) / 100;
 }
+
+export default findById;
 
 export function toUSD(number) {
     return number.toLocaleString('en-US', {
@@ -26,7 +25,7 @@ export function toUSD(number) {
 export function calcLineItem(quantity, price) {
     
     const orderTotal = quantity * price;
-
+    
     return roundCurrency(orderTotal);
     
 }
@@ -34,14 +33,14 @@ export function calcLineItem(quantity, price) {
 
 export function calcOrderTotal(cart, fruits) {
     let orderTotal = 0;
-
+    
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
         const fruit = findById(fruits, lineItem.id);
         const lineTotal = calcLineItem(lineItem.quantity, fruit.price);
-
+        
         orderTotal += lineTotal;
     }
-
+    
     return orderTotal;
 }

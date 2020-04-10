@@ -1,4 +1,4 @@
-import cart from './cartData.js';
+// import cart from './cartData.js';
 import fruits from '../data.js';
 import findById, { calcOrderTotal, toUSD } from '../utils/utils.js';
 import { renderLineItem } from './render-line-item.js';
@@ -6,6 +6,15 @@ import { renderLineItem } from './render-line-item.js';
 const tbody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('order-total-cell');
 
+const cartInLocalStorage = localStorage.getItem('CART');
+let cart;
+
+if (cartInLocalStorage) {
+    cart = JSON.parse(cartInLocalStorage);
+}
+else {
+    cart = [];
+}
 // for the cart
 for (let i = 0; i < cart.length; i++) {
     const cartItem = cart[i];
