@@ -3,6 +3,8 @@ import fruits from '../data.js';
 import findById, { calcOrderTotal, toUSD } from '../utils/utils.js';
 import { renderLineItem } from './render-line-item.js';
 
+const placeOrderButton = document.querySelector('button');
+
 const tbody = document.querySelector('tbody');
 const orderTotalCell = document.getElementById('order-total-cell');
 
@@ -22,6 +24,9 @@ for (let i = 0; i < cart.length; i++) {
     const dom = renderLineItem(cartItem, fruit);
 
     tbody.appendChild(dom);
+}
+if (cart.length === 0) {
+    placeOrderButton.disabled = true;
 }
 
 const orderTotal = calcOrderTotal(cart, fruits);

@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 li {
     list-style: none;
     position: relative;
@@ -43,7 +37,3 @@ li img {
     background: #aaa;
     color: white;
 }
-
-
-/* "https://media.giphy.com/media/3o85xtXEra0Y6vRTj2/giphy.gif";
-     */
